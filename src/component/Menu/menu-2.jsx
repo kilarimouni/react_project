@@ -4,12 +4,12 @@ import { menu_list } from "../../Images/data";
 import ScreenSize from '../scrrensize/scrrensize';
 
 const ImageScroll = () => {
-  const images =menu_list
+  const images = menu_list
 
-  const imagesPerPage = Math.floor(ScreenSize()/110);
+  const imagesPerPage = Math.floor(ScreenSize() / 110);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const last_index=Math.ceil((menu_list.length-imagesPerPage)/3)
+  const last_index = Math.ceil((menu_list.length - imagesPerPage) / 3)
 
   const scrollForward = () => {
     if (currentIndex + 1 >= images.length) {
@@ -34,28 +34,31 @@ const ImageScroll = () => {
 
   return (
     <div id="menu">
-        <h3>{Math.floor(ScreenSize()/110) }</h3>
-      {currentIndex==0 ?
+      <div className='pre-next-buttons'>
+        {/* <h3>{Math.floor(ScreenSize()/110) }</h3> */}
+        {currentIndex == 0 ?
 
-        <button disabled>Previous</button>
-        :
-        <button onClick={scrollBackward}>Previous</button>
-    }
-      <div className="image-scroll-container">
-       <center>
-       <div
-          className="scroll-wrapper"
-          style={{ transform: `translateX(${translateX}%)` }}
-        >
-          {images.map((image, index) => (
-            <img key={index} src={image.menu_image} alt={`Image ${index}`} className="scroll-image" />
-          ))}
-        </div>
-       </center>
+          <button disabled>&#129144;</button>
+          :
+          <button onClick={scrollBackward}>&#129144;</button>
+        }
+        {/* {currentIndex==last_index?  <button disabled>Next</button>:  <button onClick={scrollForward}>Next</button>} */}
+        <button onClick={scrollForward}>&#129146;</button>
       </div>
-      {console.log(currentIndex,last_index,menu_list.length)}
-      {/* {currentIndex==last_index?  <button disabled>Next</button>:  <button onClick={scrollForward}>Next</button>} */}
-     <button onClick={scrollForward}>Next</button>
+      <div className="image-scroll-container">
+        <center>
+          <div
+            className="scroll-wrapper"
+            style={{ transform: `translateX(${translateX}%)` }}
+          >
+            {images.map((image, index) => (
+              <img key={index} src={image.menu_image} alt={`Image ${index}`} className="scroll-image" />
+            ))}
+          </div>
+        </center>
+      </div>
+      {console.log(currentIndex, last_index, menu_list.length)}
+
     </div>
   );
 };

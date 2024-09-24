@@ -1,6 +1,6 @@
 .container-2 {
   display: flex;
-  flex-flow: wrap;
+  /* flex-flow: wrap; */
   flex-direction: column;
   justify-content: center;
   align-content: center;

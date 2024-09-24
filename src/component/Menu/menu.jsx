@@ -5,7 +5,7 @@ import { Prev } from "react-bootstrap/esm/PageItem";
 
 const Menu=({category,setCategory})=>{
     return(
-        <div className="menu" id="menu">
+        <div className="menu" c>
          <h1>Explore our menu</h1>
          <p className="menu-text">Food is any substance consumed by an organism for nutritional support. Food is usually of plant, animal, or fungal origin and contains essential </p>
          <div class="menu-list">

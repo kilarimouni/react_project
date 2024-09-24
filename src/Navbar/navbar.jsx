@@ -43,34 +43,30 @@ const CustomNavbar = ({ onLogout }) => {
         <Navbar.Brand href="/">
           <img src={data.logo} width={`50px`} alt="Logo" className="logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" style={{color:"red"}}/>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
-          <Nav className="mx-auto" style={{color:"red"}}>
-            <Nav.Link 
-              as={Link} 
-              to="/" 
-              className={menu === "Home" ? "active" : ""}
-              onClick={() => setMenu("Home")}
+          <Nav className="mx-auto" >
+            <Nav.Link
+              as={Link}
+              to="/"
+
             >
-             <span>Home</span> 
+              <span className={menu === "Home" ? "active" : ""}
+                onClick={() => setMenu("Home")}>Home</span>
             </Nav.Link>
-            <Nav.Link 
-              onClick={() => handleNavigation('/', 'menu')}
-              className={menu === "menu" ? "active" : ""}
+            <Nav.Link
+
             >
-               <span>Menu</span> 
+              <span onClick={() => handleNavigation('/', 'menu')}
+                className={menu === "menu" ? "active" : ""}>Menu</span>
             </Nav.Link>
-            <Nav.Link 
-              
-            >
-             <span onClick={() => handleNavigation('/', 'download')}
-              className={menu === "download" ? "active" : ""}>Mobile-app</span> 
+            <Nav.Link>
+              <span onClick={() => handleNavigation('/', 'download')}
+                className={menu === "download" ? "active" : ""}>Mobile-app</span>
             </Nav.Link>
-            <Nav.Link 
-              onClick={() => handleNavigation('/', 'footer')}
-              className={menu === "Contact" ? "active" : ""}
-            >
-              <span>Contact us</span>
+            <Nav.Link >
+              <span onClick={() => handleNavigation('/', 'footer')}
+                className={menu === "Contact" ? "active" : ""}>Contact us</span>
             </Nav.Link>
           </Nav>
 
