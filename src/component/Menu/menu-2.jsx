@@ -34,6 +34,9 @@ const ImageScroll = () => {
 
   return (
     <div id="menu">
+
+<h1>Explore our menu</h1>
+<p className="menu-text">Food is any substance consumed by an organism for nutritional support. Food is usually of plant, animal, or fungal origin and contains essential </p>
       <div className='pre-next-buttons'>
         {/* <h3>{Math.floor(ScreenSize()/110) }</h3> */}
         {currentIndex == 0 ?

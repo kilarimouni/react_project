@@ -19,6 +19,7 @@ import PaymentSuccess from "./project/payment/paymentSucess";
 import { Elements } from '@stripe/react-stripe-js';  // Import Elements
 import { loadStripe } from '@stripe/stripe-js';  // Import loadStripe
 import CustomNavbar from "./Navbar/navbar";
+import SearchBar from "./project/payment/search/search";
 const pk_key = "pk_test_51Pw4zqCfbvsxLfXUYaYUE1T13ce7o2UalPaLgExpXls9B1NQW13NrYoKyxUdbxOQ8bzKJJQ2f7AHPDDNaNFRGXQf00GQDkdqAV"
 const stripePromise = loadStripe(pk_key)
 function App() {
@@ -55,6 +56,7 @@ function App() {
               <Route path="/order" element={<ProtectedRoute isLoggedIn={isLoggedIn}><PlaceOrder /></ProtectedRoute>} />
               <Route path="/checkout" element={<Elements stripe={stripePromise}> <CheckoutForm /></Elements>} />
               <Route path="/success" element={<ProtectedRoute isLoggedIn={isLoggedIn}><PaymentSuccess /></ProtectedRoute>} />
+              
 
               <Route path="*" element={<ProtectedRoute isLoggedIn={isLoggedIn}><ErrorMessage /></ProtectedRoute>} />
               {/* <Route path="/login" element={<ProtectedRoute isLoggedIn={isLoggedIn}><Profile /></ProtectedRoute>} />

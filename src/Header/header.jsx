@@ -11,7 +11,7 @@ const Header=()=>{
               
               screen_size<=500 ?
               
-              <p style={{fontSize:"14px"}}>Order your favourite food here</p>:<p style={{fontSize:"20px"}}>Order your favourite food here</p>
+              <p style={{fontSize:"14px"}}>Order your favourite food here</p>:<p style={{fontSize:"18px"}}>Order your favourite food here</p>
               
               
               

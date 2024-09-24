@@ -7,6 +7,7 @@ import "./home.css"
 import FoodDisplay from "../../component/Fooddisplay/display";
 import Download from "../../component/Appdowmload/dowmload";
 import ImageScroll from "../../component/Menu/menu-2";
+import SearchBar from "../payment/search/search";
 
 const HomePage=({setLogin})=>{
     const [category,setCategory]=useState("All")
@@ -20,6 +21,7 @@ const HomePage=({setLogin})=>{
         <FoodDisplay category={category}/>
         <Link to="/">{HomePage}</Link>
         <Download/>
+        
         </div>
     )
 }

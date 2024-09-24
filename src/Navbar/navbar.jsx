@@ -46,17 +46,11 @@ const CustomNavbar = ({ onLogout }) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="mx-auto" >
-            <Nav.Link
-              as={Link}
-              to="/"
-
-            >
+            <Nav.Link  as={Link} to="/" >
               <span className={menu === "Home" ? "active" : ""}
                 onClick={() => setMenu("Home")}>Home</span>
             </Nav.Link>
-            <Nav.Link
-
-            >
+            <Nav.Link >
               <span onClick={() => handleNavigation('/', 'menu')}
                 className={menu === "menu" ? "active" : ""}>Menu</span>
             </Nav.Link>
@@ -66,12 +60,15 @@ const CustomNavbar = ({ onLogout }) => {
             </Nav.Link>
             <Nav.Link >
               <span onClick={() => handleNavigation('/', 'footer')}
-                className={menu === "Contact" ? "active" : ""}>Contact us</span>
+                className={menu === "footer" ? "active" : ""}>Contact us</span>
             </Nav.Link>
           </Nav>
 
           <div className="serach">
+            <Link to="/search">
             <img src={data.search_icon} alt="search_icon" />
+            </Link>
+            
             <div className="b-icon">
               <Link to="/cart">
                 <img src={data.basket_icon} alt="basket-icon" />

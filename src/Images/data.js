@@ -465,7 +465,7 @@ export const food_list = [
         category: "Noodles"
     },{
         _id: "33",
-        name: "Arabian Juices and Salads",
+        name: "Arabian  Salads",
         image: food_33,
         price: 899,
         description: "Food provides essential nutrients for overall health and well-being",
@@ -486,7 +486,7 @@ export const food_list = [
         category: "Salad"
     },{
         _id: "36",
-        name: "VNR Fresh Juice Center",
+        name: "VNR Fresh Juice ",
         image: food_36,
         price: 679,
         description: "Food provides essential nutrients for overall health and well-being",
@@ -514,7 +514,7 @@ export const food_list = [
         category: "Rolls"
     }, {
         _id: "40",
-        name: "Gobblers Rolls & Bowls",
+        name: "Gobblers Rolls ",
         image: food_40,
         price: 400,
         description: "Food provides essential nutrients for overall health and well-being",
@@ -535,14 +535,14 @@ export const food_list = [
         category: "Deserts"
     },{
         _id: "43",
-        name: "The Thickshake Project Ice Cream",
+        name: " Thickshake Ice Cream",
         image: food_43,
         price: 600,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
     },{
         _id: "44",
-        name: "Ohri's Eatmor Ice Cream",
+        name: "Ohri's  Ice Cream",
         image: food_44,
         price: 489,
         description: "Food provides essential nutrients for overall health and well-being",
@@ -647,7 +647,7 @@ export const food_list = [
         category: "Pasta"
     },{
         _id: "59",
-        name: "Cottage Cheese Pasta Sauce",
+        name: "Cottage Cheese Pasta ",
         image: food_59,
         price: 269,
         description: "Food provides essential nutrients for overall health and well-being",
@@ -689,91 +689,91 @@ export const food_list = [
         category: "Noodles"
     },{
         _id: "65",
-        name: "Soy Sauce Noodles",
+        name: "chicken Biryani",
         image: food_65,
         price: 399,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Biryani"
     },{
         _id: "66",
-        name: "Soy Sauce Noodles",
+        name: "Egg Biryani",
         image: food_66,
         price: 770,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Biryani"
     },{
         _id: "67",
-        name: "Soy Sauce Noodles",
+        name: "Vegetable Biryani",
         image: food_67,
         price: 548,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Biryani"
     },{
         _id: "68",
-        name: "Soy Sauce Noodles",
+        name: "Karachi Biryani",
         image: food_68,
         price: 678,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Biryani"
     },{
         _id: "69",
-        name: "Soy Sauce Noodles",
+        name: "Ambur Biryani",
         image: food_69,
         price: 369,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Biryani"
     },{
         _id: "70",
-        name: "Soy Sauce Noodles",
+        name: "Sindhi Biryani",
         image: food_70,
         price: 693,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Biryani"
     },{
         _id: "71",
-        name: "Soy Sauce Noodles",
+        name: " Chettinad Biryani",
         image: food_71,
         price: 369,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Biryani"
     },{
         _id: "72",
-        name: "Soy Sauce Noodles",
+        name: "Dindigul Biryani",
         image: food_72,
         price: 999,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Biryani"
     },{
         _id: "73",
-        name: "Soy Sauce Noodles",
+        name: "Veggie Pizza. ",
         image: food_73,
         price: 675,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pizzas"
     },{
         _id: "74",
-        name: "Soy Sauce Noodles",
+        name: "Hawaiian Pizza.",
         image: food_74,
         price: 574,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pizzas"
     },{
         _id: "75",
-        name: "Soy Sauce Noodles",
+        name: "BBQ Chicken Pizza.",
         image: food_75,
         price: 437,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pizzas"
     },{
         _id: "76",
-        name: "Soy Sauce Noodles",
+        name: "Buffalo Chicken Pizza.",
         image: food_76,
         price: 568,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pizzas"
     },{
         _id: "77",
-        name: "Soy Sauce Noodles",
+        name: "Supreme Pizza.",
         image: food_77,
         price: 366,
         description: "Food provides essential nutrients for overall health and well-being",
@@ -787,70 +787,70 @@ export const food_list = [
         category: "Pizzas"
     },{
         _id: "79",
-        name: "Soy Sauce Noodles",
+        name: "Meat Pizza",
         image: food_79,
         price: 459,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pizzas"
     },{
         _id: "80",
-        name: "Soy Sauce Noodles",
+        name: "Soy Sauce pizza",
         image: food_80,
         price: 786,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pizzas"
     },{
         _id: "81",
-        name: "Soy Sauce Noodles",
+        name: "Schezwan Momos",
         image: food_81,
         price: 569,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Momos"
     },{
         _id: "82",
-        name: "Soy Sauce Noodles",
+        name: " Devil Momos",
         image: food_82,
         price: 259,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Momos"
     },{
         _id: "83",
-        name: "Soy Sauce Noodles",
+        name: "Afghani Momos",
         image: food_83,
         price: 378,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Momos"
     },{
         _id: "84",
-        name: "Soy Sauce Noodles",
+        name: " Au Gratin Momos",
         image: food_84,
         price: 367,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Momos"
     },{
         _id: "85",
-        name: "Soy Sauce Noodles",
+        name: "Momos Chaat ",
         image: food_85,
         price: 299,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Momos"
     },{
         _id: "86",
-        name: "Soy Sauce Noodles",
+        name: "BBQ Momos",
         image: food_86,
         price: 357,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Momos"
     },{
         _id: "87",
-        name: "Soy Sauce Noodles",
+        name: " Shot Momos",
         image: food_87,
         price: 266,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Momos"
     },{
         _id: "88",
-        name: "Soy Sauce Noodles",
+        name: "Dessert Momos ",
         image: food_88,
         price: 600,
         description: "Food provides essential nutrients for overall health and well-being",

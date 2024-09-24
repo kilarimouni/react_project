@@ -47,25 +47,16 @@
 
  /* Ensure navbar-toggler button remains red in both states (collapsed and expanded) */
 .navbar-toggler {
-  background-color: red;
-  border-color: red; /* Optional: change the border color to match */
+  background-color: rgb(255, 106, 0);
+  border-color: rgb(255, 106, 0); /* Optional: change the border color to match */
 }
+
 
 /* Optional: If you want the button to retain the color when clicked or focused */
 .navbar-toggler:focus, 
 .navbar-toggler:active {
-  background-color: red;
-  border-color: red;
-}
-
-/* Navbar is collapsed (menu hidden) */
-.navbar-toggler.collapsed {
-  background-color: red; /* Red when collapsed */
-}
-
-/* Navbar is expanded (menu shown) */
-.navbar-toggler:not(.collapsed) {
-  background-color: red; /* Still red when expanded */
+  background-color: rgb(255, 102, 0);
+  border-color: hsl(23, 100%, 50%);
 }
 
 
