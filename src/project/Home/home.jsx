@@ -1,5 +1,4 @@
 import Header from "../../Header/header";
-import Menu from "../../component/Menu/menu";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../Navbar/navbar";
@@ -17,7 +16,7 @@ const HomePage=({setLogin})=>{
              {/* <Navbar setLogin={setLogin}/> */}
         <Header/>
         {/* <Menu category={category} setCategory={setCategory}/> */}
-        <ImageScroll/>
+        <ImageScroll category={category} setCategory={setCategory}/>
         <FoodDisplay category={category}/>
         <Link to="/">{HomePage}</Link>
         <Download/>
@@ -26,3 +25,6 @@ const HomePage=({setLogin})=>{
     )
 }
 export default HomePage;
+
+// aaa menu ni endhu choosthunnav menu2 ki marchaam kadha
+  // ippdu work aithunnay ledhu ok okka nimisham wait chey

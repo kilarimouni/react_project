@@ -1,11 +1,8 @@
 .image-scroll-container {
     display: flex;
     overflow: hidden;
-    width: 90%; 
+    width: 100%; 
     margin-left: 5%;/* Adjust to fit 10 images */
-    
-    
-
   }
   
   .scroll-wrapper {
@@ -13,26 +10,28 @@
     transition: transform 0.5s ease-in-out; /* Smooth animation */
    
   }
-  .memu h1{
-    color: rgba(53, 48, 48, 0.4);
+  .memu, .menu-title{
+    
     font-size: 500;
     
 }
   
-  .scroll-image {
+  #scroll-image {
     width: 100px;
-    margin-right: 10px;
+    /* margin-right: 40px; */
     border-radius: 50%;
-    cursor: pointer;
+    /* cursor: pointer; */
    
-    transition: 0.2s;
+    /* transition: 0.2s; */
     height: 130px
   }
- .scroll-image:hover{
-  transform: 105%;
+ #scroll-image:hover{
+  transform: scale(105%);
  }
  
-
+.menu-title,.menu-text{
+  margin-left: 4%;
+}
 
   
   button {
@@ -51,4 +50,32 @@
   .pre-next-buttons :active{
     background-color: rgb(234, 166, 63);
   }
-  
+
+  .menu-item img{
+    width: 7.5vw;
+    min-width: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 130px;
+}
+
+.menu-item p{
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(2vw,20);
+    cursor: pointer;
+}
+
+.menu-item p:hover{
+    color: black;
+}
+
+
+.image-name{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-right: 40px;
+}

@@ -1,6 +1,7 @@
 .container-2 {
   display: flex;
   /* flex-flow: wrap; */
+  /* width: 80%; */
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -12,6 +13,10 @@
   animation: 2s;
   
 
+}
+
+.container-2:hover{
+  transform: scale(105%);
 }
 
 .title-rating,

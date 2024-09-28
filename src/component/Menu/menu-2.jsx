@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './menu-2.css';
 import { menu_list } from "../../Images/data";
 import ScreenSize from '../scrrensize/scrrensize';
+import { Prev } from "react-bootstrap/esm/PageItem";
 
-const ImageScroll = () => {
+const ImageScroll = ({category,setCategory}) => {
   const images = menu_list
 
   const imagesPerPage = Math.floor(ScreenSize() / 110);
@@ -35,7 +36,7 @@ const ImageScroll = () => {
   return (
     <div id="menu">
 
-<h1>Explore our menu</h1>
+<h1 className='menu-title'>Explore our menu</h1>
 <p className="menu-text">Food is any substance consumed by an organism for nutritional support. Food is usually of plant, animal, or fungal origin and contains essential </p>
       <div className='pre-next-buttons'>
         {/* <h3>{Math.floor(ScreenSize()/110) }</h3> */}
@@ -55,7 +56,10 @@ const ImageScroll = () => {
             style={{ transform: `translateX(${translateX}%)` }}
           >
             {images.map((image, index) => (
-              <img key={index} src={image.menu_image} alt={`Image ${index}`} className="scroll-image" />
+              <div  onClick={()=>setCategory(Prev===image.menu_name?"All":image.menu_name)} key={index} className='image-name'>
+              <img key={index} src={image.menu_image} alt={`Image ${index}`} id="scroll-image" className={category===image.menu_name?"active":""} />
+              <p>{image.menu_name}</p>
+              </div>              
             ))}
           </div>
         </center>

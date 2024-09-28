@@ -17,6 +17,7 @@ const CheckoutForm = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [amount, setAmount] = useState(''); // Add amount state
+  const { setCart } = useContext(StoreContext);
 
   useEffect(() => {
     if (!location.state?.totalAmount) {
@@ -46,7 +47,7 @@ const CheckoutForm = () => {
   
     try {
       // Fetch the client secret from the backend
-      const response = await fetch('http://localhost:55256/create-payment-intent', {
+      const response = await fetch('http://localhost:3000/create-payment-intent', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ amount: getTotal()+50 *100 }), // Example amount in cents
@@ -79,7 +80,8 @@ const CheckoutForm = () => {
         setErrorMessage(error.message);
       } else if (paymentIntent.status === 'succeeded') {
           setSuccessMessage('Payment successful!');
-          alert('Payment Successful!');
+          // alert('Payment Successful!');
+          setCart({})
 
           // window.location.href = "/success";
           navigate("/success");

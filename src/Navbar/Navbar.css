@@ -47,7 +47,7 @@
 
  /* Ensure navbar-toggler button remains red in both states (collapsed and expanded) */
 .navbar-toggler {
-  background-color: rgb(255, 106, 0);
+  background-color: white !important;
   border-color: rgb(255, 106, 0); /* Optional: change the border color to match */
 }
 
@@ -58,10 +58,6 @@
   background-color: rgb(255, 102, 0);
   border-color: hsl(23, 100%, 50%);
 }
-
-
-  
-  
 
 @media(max-width:400px){
     span{
