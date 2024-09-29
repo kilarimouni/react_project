@@ -13,11 +13,16 @@ app.use(cors()); // Use CORS middleware
 app.use(express.json()); // Parse JSON bodies
 app.use(bodyParser.json());
 
+app.use((req, res) => {
+    res.status(404).send('404 Not Found');
+  });
+
 app.get("/", (req, res) =>{
     res.send("heloo iam server")
   })
 
 // Route to create a Payment Intent
+//       /api/payments/create-payment-intent
 app.post('api/payments/create-payment-intent', async (req, res) => {
   const { amount } = req.body; // The amount should be in cents (e.g., $10.00 = 1000 cents)
 
