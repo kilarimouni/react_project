@@ -2,6 +2,7 @@ const express = require('express');
 const Stripe = require('stripe');
 const dotenv = require('dotenv');
 const cors = require('cors'); // Import CORS middleware   npm install cors
+const bodyParser = require('body-parser'); // new line
 
 dotenv.config();
 
@@ -10,6 +11,7 @@ const stripe = Stripe(process.env.STRIPE_SECRET_KEY); // Use environment variabl
 
 app.use(cors()); // Use CORS middleware
 app.use(express.json()); // Parse JSON bodies
+app.use(bodyParser.json());
 
 // Route to create a Payment Intent
 app.post('/api/payments/create-payment-intent', async (req, res) => {
