@@ -14,7 +14,7 @@ app.use(express.json()); // Parse JSON bodies
 app.use(bodyParser.json());
 
 // Route to create a Payment Intent
-app.post('/api/payments/create-payment-intent', async (req, res) => {
+app.post('https://mouni-online-food-bazar', async (req, res) => {
   const { amount } = req.body; // The amount should be in cents (e.g., $10.00 = 1000 cents)
 
   try {
