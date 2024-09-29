@@ -1,22 +1,17 @@
+// server.js
+// require('dotenv').config();
 const express = require('express');
-const Stripe = require('stripe');
-const dotenv = require('dotenv');
-const cors = require('cors'); // Import CORS middleware   npm install cors
-const bodyParser = require('body-parser'); // new line
-
-dotenv.config();
+const stripe = require('stripe')('sk_test_51PfO6vRtjACyAhQq6GaEjIgG7lRe9wbcSngGD8x11d7h88O194ud6gBNHHvBm7Yl1T8Po194AGtYV40Ry7mnxeoV00Q6rCWwcg');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
-const stripe = Stripe("sk_test_51Pw4zqCfbvsxLfXUc6aYQ6HGPZh9HgrHWUGKWHKH93voUQV9x4bgEHFpnTwvxbRJDri4WZ09Hkj6VMOHgGl81ybR00UU6Xv5qN"); // Use environment variable for Stripe Secret Key
-
-app.use(cors()); // Use CORS middleware
-app.use(express.json()); // Parse JSON bodies
+app.use(cors());
 app.use(bodyParser.json());
 
-app.use((req, res) => {
-    res.status(404).send('404 Not Found');
-    console.log('i am from stripe . js')
-  });
+app.get("/", (req, res) =>{
+  res.send("heloo iam server")
+})
 
 app.get("/", (req, res) =>{
     res.send("heloo iam server")
@@ -48,3 +43,26 @@ app.post('api/payments/create-payment-intent', async (req, res) => {
 const PORT = process.env.PORT || 5002;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
+////////////////////////////////////////
+
+// app.post('/api/payments/create-payment-intent', async (req, res) => {
+//   const { amount } = req.body;
+
+//   try {
+//     const paymentIntent = await stripe.paymentIntents.create({
+//       amount,
+//       currency: 'usd',
+//     });
+
+//     res.status(200).send({
+//       clientSecret: paymentIntent.client_secret,
+//     });
+//   } catch (error) {
+//     res.status(500).send({
+//       error: error.message,
+//     });
+//   }
+// });
+
+// const PORT = 5002;
+// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
