@@ -12,7 +12,7 @@ app.use(cors()); // Use CORS middleware
 app.use(express.json()); // Parse JSON bodies
 
 // Route to create a Payment Intent
-app.post('https://mouni-online-food-bazar', async (req, res) => {
+app.post('/create-payment-intent', async (req, res) => {
   const { amount } = req.body; // The amount should be in cents (e.g., $10.00 = 1000 cents)
 
   try {
