@@ -47,7 +47,7 @@ const CheckoutForm = () => {
   
     try {
       // Fetch the client secret from the backend
-      const response = await fetch('https://mouni-online-food-bazar', {
+      const response = await fetch('/create-payment-intent', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ amount: getTotal()+50 *100 }), // Example amount in cents
