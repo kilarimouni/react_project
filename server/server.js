@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 
 app.use((req, res) => {
     res.status(404).send('404 Not Found');
+    console.log('i am from stripe . js')
   });
 
 app.get("/", (req, res) =>{
