@@ -48,7 +48,7 @@ const CheckoutForm = () => {
     try {
       // Fetch the client secret from the backend
       // await fetch(`https://react-project-three-beta.vercel.app/api/payments/create-payment-intent`
-      const response = await fetch('https://react-project-ebon-three.vercel.app/api/payments/create-payment-intent', {
+      const response = await fetch('https://react-project-kohl-chi.vercel.app/api/payments/create-payment-intent', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ amount: getTotal()+50 *100 }), // Example amount in cents
