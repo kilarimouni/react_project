@@ -59,9 +59,11 @@ const SignUpForm = ({ setCheck }) => {
                 <div className="box">
                     <input type="text" value={address} placeholder="Address" onChange={(e) => setAddress(e.target.value)} />
                 </div>
-                <p onClick={setCheck}>Already Have an Account? Login</p>
+                <p onClick={setCheck}>Already Have an Account? <span style={{color:"blue"}}>Login</span> </p>
                 <button onClick={submit}>SignUp</button>
             </div>
+            <br/>
+            <br/>
         </>
     );
 };

@@ -25,22 +25,22 @@ const PlaceOrder = () => {
             <div className="order-left">
                <p className="title">Delivery Information</p>
                <div className="multi-fields">
-                  <input type="text" placeholder="Frist Name" />
-                  <input type="text" placeholder="Last Name" />
+                  <input type="text" placeholder="Frist Name" required/>
+                  <input type="text" placeholder="Last Name" required/>
 
                </div>
-               <input type="email" placeholder="Email address" />
-               <input type="text" placeholder="Street" />
+               <input type="email" placeholder="Email address" required/>
+               <input type="text" placeholder="Street" required/>
                <div className="multi-fields">
-                  <input type="text" placeholder="City" />
-                  <input type="text" placeholder="State" />
+                  <input type="text" placeholder="City" required/>
+                  <input type="text" placeholder="State" required/>
                </div>
                <div className="multi-fields">
-                  <input type="text" placeholder="Zip code" />
-                  <input type="text" placeholder="Country" />
+                  <input type="text" placeholder="Zip code" required/>
+                  <input type="text" placeholder="Country" required/>
 
                </div>
-               <input type="text" placeholder="phone" />
+               <input type="text" placeholder="phone" required/>
             </div>
 
             <div className="order-right">
@@ -65,7 +65,8 @@ const PlaceOrder = () => {
                      </div>
 
                   </div>
-                  <button type="button" onClick={handleProceedToPayment}>
+                
+                  <button type="submit" onClick={handleProceedToPayment}>
               PROCEED TO PAYMENT
             </button>
                </div>

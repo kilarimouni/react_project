@@ -33,7 +33,7 @@ const LoginForm = ({setIsLoggedIn,setCheck}) => {
 
 
                 
-                alert("Login successfully")
+                // alert("Login successfully")
             }
         } catch (error) {
             alert(error)
@@ -53,12 +53,15 @@ const LoginForm = ({setIsLoggedIn,setCheck}) => {
                 <div className="box">
                     <input type="password" value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
                 </div>
-                <p onClick={setCheck}>Don't Have an Account Create Account</p>
+                <p onClick={setCheck}>Don't Have an Account ? <span style={{color:"blue"}}>Create Account</span></p>
                 <button onClick={submit}>Login</button>
 
             </div>
+            <br/>
+            <br/>
 
         </>
+
 
     );
 };

@@ -9,8 +9,10 @@ const Download=()=>{
              <img src={data.play_store} alt="image"/>
              <img src={data.app_store} alt="image"/>
             </div>
-
+            <br/>
+            <br/>
         </div>
+        
     )
 }
 export default Download;
